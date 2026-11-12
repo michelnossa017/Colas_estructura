@@ -1,0 +1,21 @@
+Colas en Estructura de datos Avanzada 
+
+En el ámbito de la informática y el diseño de algoritmos, una cola (queue) es una estructura de datos fundamental que organiza los elementos de manera lineal bajo el principio FIFO First-In, First-Out   es decir, el primer elemento en entrar es el primero en salir.
+1. Concepto y Principio FIFO
+A diferencia de las pilas (que operan bajo el esquema LIFO), las colas simulan el comportamiento de una fila en la vida cotidiana. Las inserciones se realizan exclusivamente por un extremo denominado final (rear o tail), mientras que las extracciones ocurren por el extremo opuesto llamado frente (front o head).
+2. Operaciones Fundamentales
+* Enqueue (Encolar): Añade un nuevo elemento al final de la cola. Su complejidad temporal suele ser O(1).
+* Dequeue (Desencolar): Elimina y devuelve el elemento ubicado en el frente de la cola. Complejidad O(1).
+* Front / Peek: Permite consultar el elemento del frente sin extraerlo de la estructura.
+* IsEmpty / IsFull: Verifican si la cola carece de elementos o si ha alcanzado su capacidad máxima (en implementaciones estáticas).
+3. Variantes en Estructuras de Datos Avanzadas
+Cuando se estudian estructuras de datos avanzadas, el concepto básico de cola evoluciona para resolver problemas de optimización, concurrencia y gestión de recursos complejos:
+* Cola Circular (Ring Buffer): Conecta el final de la estructura con el inicio mediante aritmética modular, evitando el desperdicio de memoria en arreglos estáticos.
+* Cola de Prioridad (Priority Queue): Cada elemento tiene asociada una prioridad. Los elementos con mayor prioridad se atienden antes, sin importar su orden de llegada. Se implementan eficientemente mediante montículos binarios (Binary Heaps) o montículos de Fibonacci con complejidad O(log n).
+* Cola Doblemente Terminada (Deque): Permite insertar y eliminar elementos tanto por el frente como por el final en tiempo O(1), combinando características de pilas y colas.
+* Colas Concurrentes y Lock-Free: Diseñadas para entornos multihilo, utilizan operaciones atómicas (como Compare-And-Swap) para garantizar la integridad de los datos sin bloqueos tradicionales.
+4. Aplicaciones Principales
+* Recorrido en anchura (BFS - Breadth-First Search) en grafos y árboles.
+* Planificación de procesos y tareas en sistemas operativos (Round Robin, colas multinivel).
+* Gestión de paquetes en enrutadores de red y buffers de entrada/salida (E/S).
+* Algoritmos de caminos mínimos como Dijkstra (mediante colas de prioridad).
